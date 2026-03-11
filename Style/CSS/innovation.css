@@ -1,0 +1,56 @@
+.innovation-section {
+  background-color: #e3dfda;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  text-align: center;
+}
+.innovation-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.innovation-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1.5rem;
+  background-color: hsl(var(--primary)/0.1);
+  border-radius: 9999px;
+  margin-bottom: 2rem;
+  animation: fade-in 1s ease-out forwards;
+}
+.innovation-badge span {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #90826e;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.innovation-section h2 {
+  font-size: 3rem;
+  letter-spacing: -0.08em;
+  font-family: sans-serif;
+  font-weight: 300;
+  color: #242423;
+  margin-bottom: 1.5rem;
+  animation: fade-in 1s ease-out forwards;
+}
+.innovation-section p {
+  font-size: 1.125rem;
+  color: #90826e;
+  max-width: 48rem;
+  margin: 0 auto;
+  line-height: 1.625;
+  animation: fade-in 1s ease-out forwards;
+}
+
+@media (min-width: 768px) {
+  .innovation-section h2 {
+    font-size: 3.75rem;
+  }
+  .innovation-section p {
+    font-size: 1.25rem;
+  }
+}/*# sourceMappingURL=innovation.css.map */

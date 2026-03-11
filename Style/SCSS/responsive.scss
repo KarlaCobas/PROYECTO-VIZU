@@ -1,0 +1,82 @@
+@media (max-width: 992px) {
+  .hero-content {
+    flex-direction: column;
+  }
+
+  .hero-slider {
+    order: -1;
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 40px;
+  }
+
+  .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testimonials-grid {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  section {
+    padding: 60px 0;
+  }
+
+  .circle-pilar {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .gallery-card img {
+    height: 300px;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    margin-top: 60px;
+  }
+
+  .stats-section .text-4xl {
+    font-size: 2rem;
+  }
+
+  .stats-section .md\:text-5xl {
+    font-size: 2.5rem;
+  }
+
+  .contact-section .container {
+    padding: 0 1rem;
+  }
+
+  .logo-text {
+    display: none;
+  }
+
+  .logo-icon {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+@media (min-width: 993px) {
+  .hero-content {
+    flex-direction: row;
+  }
+
+  .hero-slider {
+    order: 0;
+  }
+}

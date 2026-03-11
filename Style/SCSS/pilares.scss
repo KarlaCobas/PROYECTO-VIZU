@@ -1,0 +1,85 @@
+.pilares-section {
+  background-color: #f0efed;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  text-align: center;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  h3 {
+    font-size: 2.25rem;
+    letter-spacing: -0.08em;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: #b4ada2;
+    margin-bottom: 2rem;
+  }
+}
+
+.pilares-circles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  max-width: 64rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.circle-pilar {
+  display: flex;
+  height: 8rem;
+  width: 8rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  border-width: 2px;
+  border-color: #494846;
+  background-color: #c7c5c2;
+
+  span {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #0a0a0a;
+  }
+}
+
+.circle-line-custom {
+  display: none;
+  height: 0.125rem;
+  width: 4rem;
+  background-image: linear-gradient(to right, rgba(87, 79, 66, 0.5), rgba(145, 131, 110, 0.5));
+}
+
+.pilares-section p {
+  font-size: 1.125rem;
+  color: #b4ada2;
+  max-width: 48rem;
+  margin: 0 auto;
+  line-height: 1.625;
+}
+
+@media (min-width: 768px) {
+  .pilares-section h3 {
+    font-size: 3rem;
+  }
+
+  .pilares-circles {
+    flex-direction: row;
+    gap: 3rem;
+  }
+
+  .circle-line-custom {
+    display: block;
+  }
+
+  .pilares-section p {
+    font-size: 1.25rem;
+  }
+}

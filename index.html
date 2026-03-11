@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vizu Creative Studio - Página Completa</title>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="Style/CSS/main.css">
+</head>
+
+<body>
+    <!-- Navegación -->
+    <nav>
+        <div class="nav-container">
+            <a class="logo-link" href="#hero">
+                <div class="logo-icon">
+                    <img src="assets/Vizu-Logo-zerkiDcI.webp" alt="Vizu Creative Studio">
+                </div>
+                <span class="logo-text">Vizu <span>Creative</span> Studio</span>
+            </a>
+            <!-- Navegación desktop -->
+            <div class="nav-links">
+                <a class="active" href="#hero">Inicio</a>
+                <div class="relative">
+                    <button>
+                        Servicios
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m6 9 6 6 6-6"></path>
+                        </svg>
+                    </button>
+                </div>
+                <a href="#galeria">Industrias</a>
+                <a href="#contacto">
+                    <button class="nav-btn">Contacto</button>
+                </a>
+            </div>
+            <!-- Icono de hamburguesa -->
+            <button class="menu-icon" id="menuToggle">
+                <svg id="menuIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="4" x2="20" y1="12" y2="12"></line>
+                    <line x1="4" x2="20" y1="6" y2="6"></line>
+                    <line x1="4" x2="20" y1="18" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+        <!-- Menú móvil -->
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#hero">Inicio</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#galeria">Industrias</a>
+            <a href="#contacto" class="nav-btn">Contacto</a>
+        </div>
+    </nav>
+
+    <!-- Sección 1: Hero con slider infinito -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-slider">
+                    <div class="image-grid">
+                        <!-- (16 imágenes primera copia) -->
+                        <div class="grid-img"
+                            style="transform: translate3d(calc(0 * (clamp(150px, 18vw, 150px) + clamp(16px, 3vw, 40px))), calc(0 * (clamp(265px, 32vh, 265px) + clamp(16px, 3vw, 40px))), 0px);">
+                            <img src="assets/9-2dUXdZ7x.webp" alt="Imagen 1" loading="lazy">
+                        </div>
+                        <div class="grid-img"
+                            style="transform: translate3d(calc(clamp(150px, 18vw, 150px) + clamp(16px, 3vw, 40px)), calc(0 * (clamp(265px, 32vh, 265px) + clamp(16px, 3vw, 40px))), 0px);">
+                            <img src="assets/10-DZ8zhrxC.webp" alt="Imagen 2" loading="lazy">
+                        </div>
+                        <div class="grid-img"
+                            style="transform: translate3d(calc(0 * (clamp(150px, 18vw, 150px) + clamp(16px, 3vw, 40px))), calc(clamp(265px, 32vh, 265px) + clamp(16px, 3vw, 40px)), 0px);">
+                            <img src="assets/11-B7KDR4KA.webp" alt="Imagen 3" loading="lazy">
+                        </div>
+                        <div class="grid-img"
+                            style="transform: translate3d(calc(clamp(150px, 18vw, 150px) + clamp(16px, 3vw, 40px)), calc(clamp(265px, 32vh, 265px) + clamp(16px, 3vw, 40px)), 0px);">
+                            <img src="assets/12-d8BUaYAM.webp" alt="Imagen 4" loading="lazy">
+                        </div>
+                        <div class="grid-img"
+                            style="transform: translate3d(calc(0 * (clamp(150px, 18vw, 150px) + clamp(16px, 3vw, 40px))), calc(2 * (clamp(265px, 32vh, 265px) + clamp(16px, 3vw, 40px))), 0px);">
+                            <img src="assets/BIRTHDAY-GB5R0pgB.webp" alt="Imagen 5" loading="lazy">
+                        </div>
+                        <div class="grid-img"
+                            style="transform: translate3d(calc(clamp(150px, 18vw, 150px) + clamp(16px, 3vw, 40px)), calc(2 * (clamp(265px, 32vh, 265px) + clamp(16px, 3vw, 40px))), 0px);">
+                            <img src="assets/Dental1-BW3VEL4i.jpg" alt="Imagen 6" loading="lazy">
+                        </div>
+                        <div class="grid-img"
+                            style="transform: translate3d(calc(0 * (clamp(150px, 18vw, 150px) + clamp(16px, 3vw, 40px))), calc(3 * (clamp(265px, 32vh, 265px) + clamp(16px, 3vw, 40px))), 0px);">
+                            <img src="assets/8-D59Tt6I4.webp" alt="Imagen 7" loading="lazy">
+                        </div>
+                        <div class="grid-img"
+                            style="transform: translate3d(calc(clamp(150px, 18vw, 150px) + clamp(16px, 3vw, 40px)), calc(3 * (clamp(265px, 32vh, 265px) + clamp(16px, 3vw, 40px))), 0px);">
+                            <img src="assets/7-DxColTR5.webp" alt="Imagen 8" loading="lazy">
+                        </div>
+                        <div class="grid-img"
+                            style="transform: translate3d(calc(0 * (clamp(150px, 18vw, 150px) + clamp(16px, 3vw, 40px))), calc(4 * (clamp(265px, 32vh, 265px) + clamp(16px, 3vw, 40px))), 0px);">
+                            <img src="assets/GENERAL-DDLGPrar.webp" alt="Imagen 9" loading="lazy">
+                        </div>
+                        <div class="grid-img"
+                            style="transform: translate3d(calc(clamp(150px, 18vw, 150px) + clamp(16px, 3vw, 40px)), calc(4 * (clamp(265px, 32vh, 265px) + clamp(16px, 3vw, 40px))), 0px);">
+                            <img src="assets/Kasiun1-AN8Nzndd.png" alt="Imagen 10" loading="lazy">
+                        </div>
+                        <div class="grid-img"
+                            style="transform: translate3d(calc(0 * (clamp(150px, 18vw, 150px) + clamp(16px, 3vw, 40px))), calc(5 * (clamp(265px, 32vh, 265px) + clamp(16px, 3vw, 40px))), 0px);">
+                            <img src="assets/negocioG-CXVZEYCg.jpg" alt="Imagen 11" loading="lazy">
+                        </div>
+                        <div class="grid-img"
+                            style="transform: translate3d(calc(clamp(150px, 18vw, 150px) + clamp(16px, 3vw, 40px)), calc(5 * (clamp(265px, 32vh, 265px) + clamp(16px, 3vw, 40px))), 0px);">
+                            <img src="assets/10-DZ8zhrxC.webp" alt="Imagen 12" loading="lazy">
+                        </div>
+                        <div class="grid-img"
+                            style="transform: translate3d(calc(0 * (clamp(150px, 18vw, 150px) + clamp(16px, 3vw, 40px))), calc(6 * (clamp(265px, 32vh, 265px) + clamp(16px, 3vw, 40px))), 0px);">
+                            <img src="assets/10-DZ8zhrxC.webp" alt="Imagen 13" loading="lazy">
+                        </div>
+                        <div class="grid-img"
+                            style="transform: translate3d(calc(clamp(150px, 18vw, 150px) + clamp(16px, 3vw, 40px)), calc(6 * (clamp(265px, 32vh, 265px) + clamp(16px, 3vw, 40px))), 0px);">
+                            <img src="assets/11-B7KDR4KA.webp" alt="Imagen 14" loading="lazy">
+                        </div>
+                        <div class="grid-img"
+                            style="transform: translate3d(calc(0 * (clamp(150px, 18vw, 150px) + clamp(16px, 3vw, 40px))), calc(7 * (clamp(265px, 32vh, 265px) + clamp(16px, 3vw, 40px))), 0px);">
+                            <img src="assets/12-d8BUaYAM.webp" alt="Imagen 15" loading="lazy">
+                        </div>
+                        <div class="grid-img"
+                            style="transform: translate3d(calc(clamp(150px, 18vw, 150px) + clamp(16px, 3vw, 40px)), calc(7 * (clamp(265px, 32vh, 265px) + clamp(16px, 3vw, 40px))), 0px);">
+                            <img src="assets/BIRTHDAY-GB5R0pgB.webp" alt="Imagen 16" loading="lazy">
+                        </div>
+                        <!-- Segunda copia (16 imágenes) -->
+                        <div class="grid-img"
+                            style="transform: translate3d(calc(0 * (clamp(150px, 18vw, 150px) + clamp(16px, 3vw, 40px))), calc(0 * (clamp(265px, 32vh, 265px) + clamp(16px, 3vw, 40px))), 0px);">
+                            <img src="assets/9-2dUXdZ7x.webp" alt="Imagen 1" loading="lazy">
+                        </div>
+                        <div class="grid-img"
+                            style="transform: translate3d(calc(clamp(150px, 18vw, 150px) + clamp(16px, 3vw, 40px)), calc(0 * (clamp(265px, 32vh, 265px) + clamp(16px, 3vw, 40px))), 0px);">
+                            <img src="assets/10-DZ8zhrxC.webp" alt="Imagen 2" loading="lazy">
+                        </div>
+                        <div class="grid-img"
+                            style="transform: translate3d(calc(0 * (clamp(150px, 18vw, 150px) + clamp(16px, 3vw, 40px))), calc(clamp(265px, 32vh, 265px) + clamp(16px, 3vw, 40px)), 0px);">
+                            <img src="assets/11-B7KDR4KA.webp" alt="Imagen 3" loading="lazy">
+                        </div>
+                        <div class="grid-img"
+                            style="transform: translate3d(calc(clamp(150px, 18vw, 150px) + clamp(16px, 3vw, 40px)), calc(clamp(265px, 32vh, 265px) + clamp(16px, 3vw, 40px)), 0px);">
+                            <img src="assets/12-d8BUaYAM.webp" alt="Imagen 4" loading="lazy">
+                        </div>
+                        <div class="grid-img"
+                            style="transform: translate3d(calc(0 * (clamp(150px, 18vw, 150px) + clamp(16px, 3vw, 40px))), calc(2 * (clamp(265px, 32vh, 265px) + clamp(16px, 3vw, 40px))), 0px);">
+                            <img src="assets/BIRTHDAY-GB5R0pgB.webp" alt="Imagen 5" loading="lazy">
+                        </div>
+                        <div class="grid-img"
+                            style="transform: translate3d(calc(clamp(150px, 18vw, 150px) + clamp(16px, 3vw, 40px)), calc(2 * (clamp(265px, 32vh, 265px) + clamp(16px, 3vw, 40px))), 0px);">
+                            <img src="assets/Dental1-BW3VEL4i.jpg" alt="Imagen 6" loading="lazy">
+                        </div>
+                        <div class="grid-img"
+                            style="transform: translate3d(calc(0 * (clamp(150px, 18vw, 150px) + clamp(16px, 3vw, 40px))), calc(3 * (clamp(265px, 32vh, 265px) + clamp(16px, 3vw, 40px))), 0px);">
+                            <img src="assets/8-D59Tt6I4.webp" alt="Imagen 7" loading="lazy">
+                        </div>
+                        <div class="grid-img"
+                            style="transform: translate3d(calc(clamp(150px, 18vw, 150px) + clamp(16px, 3vw, 40px)), calc(3 * (clamp(265px, 32vh, 265px) + clamp(16px, 3vw, 40px))), 0px);">
+                            <img src="assets/7-DxColTR5.webp" alt="Imagen 8" loading="lazy">
+                        </div>
+                        <div class="grid-img"
+                            style="transform: translate3d(calc(0 * (clamp(150px, 18vw, 150px) + clamp(16px, 3vw, 40px))), calc(4 * (clamp(265px, 32vh, 265px) + clamp(16px, 3vw, 40px))), 0px);">
+                            <img src="assets/GENERAL-DDLGPrar.webp" alt="Imagen 9" loading="lazy">
+                        </div>
+                        <div class="grid-img"
+                            style="transform: translate3d(calc(clamp(150px, 18vw, 150px) + clamp(16px, 3vw, 40px)), calc(4 * (clamp(265px, 32vh, 265px) + clamp(16px, 3vw, 40px))), 0px);">
+                            <img src="assets/Kasiun1-AN8Nzndd.png" alt="Imagen 10" loading="lazy">
+                        </div>
+                        <div class="grid-img"
+                            style="transform: translate3d(calc(0 * (clamp(150px, 18vw, 150px) + clamp(16px, 3vw, 40px))), calc(5 * (clamp(265px, 32vh, 265px) + clamp(16px, 3vw, 40px))), 0px);">
+                            <img src="assets/negocioG-CXVZEYCg.jpg" alt="Imagen 11" loading="lazy">
+                        </div>
+                        <div class="grid-img"
+                            style="transform: translate3d(calc(clamp(150px, 18vw, 150px) + clamp(16px, 3vw, 40px)), calc(5 * (clamp(265px, 32vh, 265px) + clamp(16px, 3vw, 40px))), 0px);">
+                            <img src="assets/10-DZ8zhrxC.webp" alt="Imagen 12" loading="lazy">
+                        </div>
+                        <div class="grid-img"
+                            style="transform: translate3d(calc(0 * (clamp(150px, 18vw, 150px) + clamp(16px, 3vw, 40px))), calc(6 * (clamp(265px, 32vh, 265px) + clamp(16px, 3vw, 40px))), 0px);">
+                            <img src="assets/10-DZ8zhrxC.webp" alt="Imagen 13" loading="lazy">
+                        </div>
+                        <div class="grid-img"
+                            style="transform: translate3d(calc(clamp(150px, 18vw, 150px) + clamp(16px, 3vw, 40px)), calc(6 * (clamp(265px, 32vh, 265px) + clamp(16px, 3vw, 40px))), 0px);">
+                            <img src="assets/11-B7KDR4KA.webp" alt="Imagen 14" loading="lazy">
+                        </div>
+                        <div class="grid-img"
+                            style="transform: translate3d(calc(0 * (clamp(150px, 18vw, 150px) + clamp(16px, 3vw, 40px))), calc(7 * (clamp(265px, 32vh, 265px) + clamp(16px, 3vw, 40px))), 0px);">
+                            <img src="assets/12-d8BUaYAM.webp" alt="Imagen 15" loading="lazy">
+                        </div>
+                        <div class="grid-img"
+                            style="transform: translate3d(calc(clamp(150px, 18vw, 150px) + clamp(16px, 3vw, 40px)), calc(7 * (clamp(265px, 32vh, 265px) + clamp(16px, 3vw, 40px))), 0px);">
+                            <img src="assets/BIRTHDAY-GB5R0pgB.webp" alt="Imagen 16" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-text">
+                    <h1>Estrategia. Contenido. Creatividad. <br class="hidden md:block"><span>Resultados Reales.</span>
+                    </h1>
+                    <p>Transformamos marcas con ideas que venden y contenido que conecta.</p>
+                    <div class="button-group">
+                        <button class="btn-primary">Conoce el Método VIZU 360</button>
+                        <button class="btn-secondary">Agenda una Consulta</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección 2: Servicios Integrales -->
+    <section class="cards-section" id="servicios">
+        <div class="cards-container">
+            <div class="cards-header">
+                <h2>Rompemos los límites del marketing tradicional.</h2>
+                <p>En VIZU <strong>no trabajamos por likes</strong>. Trabajamos por resultados reales que impulsan el
+                    crecimiento de tu negocio. Unimos <strong>estrategia, contenido y creatividad</strong> en un método
+                    único que transforma marcas desde adentro.</p>
+            </div>
+            <div class="cards-grid">
+                <div class="card-item" style="animation-delay: 0s;">
+                    <div class="card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10" />
+                            <circle cx="12" cy="12" r="6" />
+                            <circle cx="12" cy="12" r="2" />
+                        </svg>
+                    </div>
+                    <h3>Estrategia</h3>
+                    <p>Insights basados en data que guían cada decisión y maximizan el ROI de tu inversión.</p>
+                </div>
+                <div class="card-item" style="animation-delay: 0.2s;">
+                    <div class="card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" />
+                            <path d="M9 18h6" />
+                            <path d="M10 22h4" />
+                        </svg>
+                    </div>
+                    <h3>Contenido</h3>
+                    <p>Producción audiovisual de alto impacto que cuenta historias memorables.</p>
+                </div>
+                <div class="card-item" style="animation-delay: 0.4s;">
+                    <div class="card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="22 7 13.5 15.5 8.5 10.5 2 17" />
+                            <polyline points="16 7 22 7 22 13" />
+                        </svg>
+                    </div>
+                    <h3>Creatividad</h3>
+                    <p>Ideas disruptivas que rompen esquemas y generan conversaciones auténticas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección 3: Metodología VIZU 360 -->
+    <section class="methodology-section" id="proceso">
+        <div class="container">
+            <div class="methodology-grid">
+                <div class="methodology-left">
+                    <div class="methodology-badge">
+                        <span>Nuestro Método</span>
+                    </div>
+                    <h2>VIZU 360°</h2>
+                    <p>Nuestra metodología exclusiva integra tres pilares fundamentales para crear campañas que no solo
+                        se ven, sino que se sienten y generan resultados medibles.</p>
+                    <div class="methodology-steps">
+                        <div class="step-item">
+                            <div class="step-number"><span>1</span></div>
+                            <div class="step-content">
+                                <h4>Vender</h4>
+                                <p>Estrategias que convierten audiencia en clientes reales.</p>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-number"><span>2</span></div>
+                            <div class="step-content">
+                                <h4>Posicionar</h4>
+                                <p>Construimos autoridad y relevancia en tu industria.</p>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-number"><span>3</span></div>
+                            <div class="step-content">
+                                <h4>Impactar</h4>
+                                <p>Creamos experiencias memorables que trascienden.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="methodology-btn">Descubre cómo funciona</button>
+                </div>
+                <div class="methodology-right">
+                    <div class="methodology-image">
+                        <img src="assets/TeamVizu-CmQbBVw2.jpg"
+                            alt="VIZU 360 Methodology">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección 4: Innovación Constante -->
+    <section class="innovation-section">
+        <div class="container">
+            <div class="innovation-badge">
+                <span>Método VIZU 360</span>
+            </div>
+            <h2>Estrategia, Contenido<br>y Creatividad en Acción</h2>
+            <p>Cada servicio forma parte de una misma fórmula: resultados reales y marcas que crecen desde adentro.</p>
+        </div>
+    </section>
+
+    <!-- Sección 5: Nuestros servicios en detalle (Swiper) -->
+    <section class="services-detalle-section" id="portfolio">
+        <div class="container">
+            <h3>Nuestros Servicios</h3>
+            <div class="swiper services-swiper">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <a href="/servicios/produccion-audiovisual" class="group">
+                            <div class="relative overflow-hidden rounded-xl mb-6 w-full h-48 md:h-56 bg-secondary/10">
+                                <img src="assets/Kasiun1-AN8Nzndd.png"
+                                    alt="Producción Audiovisual"
+                                    class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+                                    loading="lazy">
+                                <div class="overlay">
+                                    <span>Ver más →</span>
+                                </div>
+                            </div>
+                            <h4>Producción Audiovisual</h4>
+                            <p class="text-muted-foreground leading-relaxed flex-grow">Contenido visual con enfoque
+                                comercial. Fotografía, video y drones que conectan y venden.</p>
+                        </a>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <a href="/servicios/branding" class="group">
+                            <div class="relative overflow-hidden rounded-xl mb-6 w-full h-48 md:h-56 bg-secondary/10">
+                                <img src="assets/Branding--5v2AiW8.png"
+                                    alt="Branding e Identidad Visual"
+                                    class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+                                    loading="lazy">
+                                <div class="overlay">
+                                    <span>Ver más →</span>
+                                </div>
+                            </div>
+                            <h4>Branding e Identidad Visual</h4>
+                            <p class="text-muted-foreground leading-relaxed flex-grow">Diseñamos marcas coherentes,
+                                memorables y visualmente poderosas.</p>
+                        </a>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                        <a href="/servicios/desarrollo-web" class="group">
+                            <div class="relative overflow-hidden rounded-xl mb-6 w-full h-48 md:h-56 bg-secondary/10">
+                                <img src="assets/Web-D-mofpMY.png"
+                                    alt="Desarrollo Web"
+                                    class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+                                    loading="lazy">
+                                <div class="overlay">
+                                    <span>Ver más →</span>
+                                </div>
+                            </div>
+                            <h4>Desarrollo Web</h4>
+                            <p class="text-muted-foreground leading-relaxed flex-grow">Creamos sitios que comunican,
+                                posicionan y convierten visitantes en clientes.</p>
+                        </a>
+                    </div>
+                    <!-- Slide 4 -->
+                    <div class="swiper-slide">
+                        <a href="/servicios/redes-sociales" class="group">
+                            <div class="relative overflow-hidden rounded-xl mb-6 w-full h-48 md:h-56 bg-secondary/10">
+                                <img src="assets/redes-vyIXg-ZT.png"
+                                    alt="Gestión de Redes Sociales"
+                                    class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+                                    loading="lazy">
+                                <div class="overlay">
+                                    <span>Ver más →</span>
+                                </div>
+                            </div>
+                            <h4>Gestión de Redes Sociales</h4>
+                            <p class="text-muted-foreground leading-relaxed flex-grow">Creamos estrategias digitales que
+                                construyen comunidad y fortalecen la identidad de tu marca.</p>
+                        </a>
+                    </div>
+                    <!-- Slide 5 -->
+                    <div class="swiper-slide">
+                        <a href="/servicios/meta-google-ads" class="group">
+                            <div class="relative overflow-hidden rounded-xl mb-6 w-full h-48 md:h-56 bg-secondary/10">
+                                <img src="assets/CONTENIDO0VIZU-jhInbslm.jpg"
+                                    alt="Campañas Meta Ads & Google Ads"
+                                    class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+                                    loading="lazy">
+                                <div class="overlay">
+                                    <span>Ver más →</span>
+                                </div>
+                            </div>
+                            <h4>Campañas Meta Ads & Google Ads</h4>
+                            <p class="text-muted-foreground leading-relaxed flex-grow">Publicidad que convierte: atrae
+                                leads, genera ventas y mide resultados.</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-button-prev">
+                    <svg width="11" height="20" viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0.38296 20.0762C0.111788 19.805 0.111788 19.3654 0.38296 19.0942L9.19758 10.2796L0.38296 1.46497C0.111788 1.19379 0.111788 0.754138 0.38296 0.482966C0.654131 0.211794 1.09379 0.211794 1.36496 0.482966L10.4341 9.55214C10.8359 9.9539 10.8359 10.6053 10.4341 11.007L1.36496 20.0762C1.09379 20.3474 0.654131 20.3474 0.38296 20.0762Z"
+                            fill="currentColor" />
+                    </svg>
+                </div>
+                <div class="swiper-button-next">
+                    <svg width="11" height="20" viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0.38296 20.0762C0.111788 19.805 0.111788 19.3654 0.38296 19.0942L9.19758 10.2796L0.38296 1.46497C0.111788 1.19379 0.111788 0.754138 0.38296 0.482966C0.654131 0.211794 1.09379 0.211794 1.36496 0.482966L10.4341 9.55214C10.8359 9.9539 10.8359 10.6053 10.4341 11.007L1.36496 20.0762C1.09379 20.3474 0.654131 20.3474 0.38296 20.0762Z"
+                            fill="currentColor" />
+                    </svg>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección 6: Pilares Fundamentales (restaurada y corregida) -->
+    <section class="pilares-section">
+        <div class="container">
+            <h3>Todo se conecta.</h3>
+            <div class="pilares-circles">
+                <div class="circle-pilar">
+                    <span>Estrategia</span>
+                </div>
+                <div class="circle-line-custom"></div>
+                <div class="circle-pilar">
+                    <span>Contenido</span>
+                </div>
+                <div class="circle-line-custom"></div>
+                <div class="circle-pilar">
+                    <span>Creatividad</span>
+                </div>
+            </div>
+            <p>Cada servicio nace de nuestro método VIZU 360, diseñado para construir marcas con propósito, emoción y
+                resultados.</p>
+        </div>
+    </section>
+
+    <!-- Sección 7: CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <h3>¿Listo para dar el salto que tu competencia no se atreve?</h3>
+            <p>Cuéntanos en qué etapa está tu marca y diseñemos tu estrategia.</p>
+            <div class="cta-buttons">
+                <button class="cta-btn-primary">Agenda una reunión</button>
+                <button class="cta-btn-secondary">Conoce el Método VIZU 360</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección 8: Galería -->
+    <section class="gallery-section" id="galeria">
+        <div class="container">
+            <div class="gallery-header">
+                <h2>Industrias que<br>impulsamos</h2>
+                <p>Creamos estrategias que venden experiencias, no solo productos.</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-card">
+                    <img src="assets/RestG-BR5XxGb7.png"
+                        alt="Restaurantes & Gastronomía">
+                    <div class="gallery-overlay"></div>
+                    <div class="gallery-content">
+                        <div class="gallery-badge">Gastronomía</div>
+                        <h3>Restaurantes &amp; Gastronomía</h3>
+                        <p>Convertimos experiencias culinarias en historias visuales que generan reservas y visitas
+                            constantes.</p>
+                    </div>
+                </div>
+                <div class="gallery-card">
+                    <img src="assets/Dental1-BW3VEL4i.jpg"
+                        alt="Clínicas Dentales & Estéticas">
+                    <div class="gallery-overlay"></div>
+                    <div class="gallery-content">
+                        <div class="gallery-badge">Salud & Estética</div>
+                        <h3>Clínicas Dentales &amp; Estéticas</h3>
+                        <p>Atraemos pacientes ideales a través de contenido educativo y campañas de confianza.</p>
+                    </div>
+                </div>
+                <div class="gallery-card">
+                    <img src="assets/Dental2-D20OdCzt.jpg"
+                        alt="Constructoras & Proyectos Inmobiliarios">
+                    <div class="gallery-overlay"></div>
+                    <div class="gallery-content">
+                        <div class="gallery-badge">Inmobiliario</div>
+                        <h3>Constructoras &amp; Proyectos Inmobiliarios</h3>
+                        <p>Vendemos proyectos con recorridos virtuales y estrategias de posicionamiento premium.</p>
+                    </div>
+                </div>
+                <div class="gallery-card">
+                    <img src="assets/negocioG-CXVZEYCg.jpg"
+                        alt="Negocios en Expansión">
+                    <div class="gallery-overlay"></div>
+                    <div class="gallery-content">
+                        <div class="gallery-badge">Empresas</div>
+                        <h3>Negocios en Expansión</h3>
+                        <p>Escalamos marcas con estrategias omnicanal que generan crecimiento sostenible.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección 9: Testimonios (con bordes restaurados) -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="testimonials-header">
+                <h2>Lo que dicen<br>nuestros clientes</h2>
+                <p>200+ marcas transformadas en Miami, Houston y Bogotá</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z">
+                        </path>
+                        <path
+                            d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z">
+                        </path>
+                    </svg>
+                    <p class="text-sm">"Trabajar con el equipo fue una experiencia excelente: son profesionales,
+                        creativos y comprometidos, logrando un contenido visual de gran calidad que fortaleció la imagen
+                        de Little Colombia. Su pasión y dedicación se reflejan en cada detalle. Agradecen su
+                        acompañamiento y los recomiendan plenamente por su talento y autenticidad."</p>
+                    <div class="border-t border-primary-foreground/10 pt-4">
+                        <p class="font-semibold">Little Colombia Restaurant</p>
+                        <p class="text-sm text-primary-foreground/60">Houston, TX</p>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z">
+                        </path>
+                        <path
+                            d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z">
+                        </path>
+                    </svg>
+                    <p class="text-sm">"Trabajar con Team Vizu fue una bendición. Desde el inicio me guiaron con
+                        estrategia, empatía y profesionalismo. Siempre me sentí apoyada y comprendida; escucharon mis
+                        ideas y necesidades con atención. Su dedicación y talento hicieron que cada detalle reflejara lo
+                        que soñaba. ¡Son lo máximo!"</p>
+                    <div class="border-t border-primary-foreground/10 pt-4">
+                        <p class="font-semibold">Innova Empire Building</p>
+                        <p class="text-sm text-primary-foreground/60">Miami, FL</p>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z">
+                        </path>
+                        <path
+                            d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z">
+                        </path>
+                    </svg>
+                    <p class="text-sm">"Trabajar con Vizu es una experiencia cercana y eficiente. Conectas rápido con su
+                        visión; comprenden tus prioridades y aplican sus herramientas para alcanzar objetivos. Lo mejor
+                        es que siempre se actualizan, garantizando calidad. Encantados de tenerlas como equipo de
+                        marketing."</p>
+                    <div class="border-t border-primary-foreground/10 pt-4">
+                        <p class="font-semibold">Kasiun Mediterranean Food</p>
+                        <p class="text-sm text-primary-foreground/60">Houston, TX</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonials-footer">
+                <p>Marcas que confían en VIZU</p>
+                <div class="trust-brands">
+                    <span>Miami</span>
+                    <span>•</span>
+                    <span>Houston</span>
+                    <span>•</span>
+                    <span>Bogotá</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección 10: Estadísticas -->
+    <section class="stats-section">
+        <div
+            class="absolute top-0 left-0 w-96 h-96 bg-primary-foreground/5 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2">
+        </div>
+        <div
+            class="absolute bottom-0 right-0 w-96 h-96 bg-primary-foreground/5 rounded-full blur-3xl translate-x-1/2 translate-y-1/2">
+        </div>
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="max-w-4xl mx-auto text-center animate-fade-in-up">
+                <h2
+                    class="text-4xl md:text-6xl lg:text-6xl tracking-[-0.08em] font-sans text-primary-foreground mb-8 leading-tight">
+                    Creamos campañas que emocionan, venden y dejan huella.</h2>
+                <p class="text-xl md:text-2xl text-primary-foreground/90 mb-12 leading-relaxed">Más de 10 años
+                    transformando marcas en Miami y Bogotá.<br>Es momento de que tu marca sea la próxima.</p>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 pt-16 border-t border-primary-foreground/20">
+                    <div class="animate-scale-in" style="animation-delay: 0.1s;">
+                        <div class="text-4xl md:text-5xl font-display font-bold text-primary-foreground mb-2">
+                            <span>10</span>+
+                        </div>
+                        <div class="text-sm text-primary-foreground/70 uppercase tracking-wide">Años</div>
+                    </div>
+                    <div class="animate-scale-in" style="animation-delay: 0.2s;">
+                        <div class="text-4xl md:text-5xl font-display font-bold text-primary-foreground mb-2">
+                            <span>500</span>+
+                        </div>
+                        <div class="text-sm text-primary-foreground/70 uppercase tracking-wide">Marcas</div>
+                    </div>
+                    <div class="animate-scale-in" style="animation-delay: 0.3s;">
+                        <div class="text-4xl md:text-5xl font-display font-bold text-primary-foreground mb-2">
+                            <span>2</span>
+                        </div>
+                        <div class="text-sm text-primary-foreground/70 uppercase tracking-wide">Países</div>
+                    </div>
+                    <div class="animate-scale-in" style="animation-delay: 0.4s;">
+                        <div class="text-4xl md:text-5xl font-display font-bold text-primary-foreground mb-2">
+                            <span>360</span>°
+                        </div>
+                        <div class="text-sm text-primary-foreground/70 uppercase tracking-wide">Método</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección 11: Contacto -->
+    <section class="contact-section" id="contacto">
+        <div class="container">
+            <!-- WhatsApp Card -->
+            <div class="contact-card contact-wa">
+                <div class="icon-bg">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512"
+                        aria-hidden="true" height="32" width="32" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z">
+                        </path>
+                    </svg>
+                </div>
+                <h3>WhatsApp</h3>
+                <p>Respuesta inmediata</p>
+                <div class="features">
+                    <div class="feature-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-clock text-primary">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                        <span>Respuesta en menos de 2 horas</span>
+                    </div>
+                    <div class="feature-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-circle-check-big text-primary">
+                            <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                            <path d="m9 11 3 3L22 4"></path>
+                        </svg>
+                        <span>Asesoría inicial gratuita</span>
+                    </div>
+                    <div class="feature-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-circle-check-big text-primary">
+                            <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                            <path d="m9 11 3 3L22 4"></path>
+                        </svg>
+                        <span>Propuesta en 24 horas</span>
+                    </div>
+                </div>
+                <button class="btn-wa" onclick="window.open('https://wa.me/34123456789', '_blank')">Escribir por
+                    WhatsApp</button>
+            </div>
+            <!-- Formulario Card -->
+            <div class="contact-card contact-form-card">
+                <div class="text-center mb-6">
+                    <div class="icon-bg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z">
+                            </path>
+                            <path d="m21.854 2.147-10.94 10.939"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold font-sans tracking-[-0.08em] text-primary mb-2">Formulario</h3>
+                    <p class="text-muted-foreground">Cuéntanos tu proyecto</p>
+                </div>
+                <form class="space-y-4" id="contactForm">
+                    <input type="text" name="name" placeholder="Tu nombre"
+                        class="w-full p-4 border border-gray-200 rounded-xl focus:outline-none focus:box-shadow-0-0-0-2px-accent transition-all duration-300"
+                        required="" value="">
+                    <input type="email" name="email" placeholder="Tu email"
+                        class="w-full p-4 border border-gray-200 rounded-xl focus:outline-none focus:box-shadow-0-0-0-2px-accent transition-all duration-300"
+                        required="" value="">
+                    <input type="text" name="phone" placeholder="Tu número de celular"
+                        class="w-full p-4 border border-gray-200 rounded-xl focus:outline-none focus:box-shadow-0-0-0-2px-accent transition-all duration-300"
+                        required="" value="">
+                    <textarea name="message" placeholder="Cuéntanos sobre tu proyecto" rows="4"
+                        class="w-full p-4 border border-gray-200 rounded-xl focus:outline-none focus:box-shadow-0-0-0-2px-accent transition-all duration-300 resize-none"
+                        required=""></textarea>
+                    <input type="text" name="honey" class="hidden" value="">
+                    <button type="submit" class="btn-submit">Enviar mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (nuevo) -->
+    <footer>
+        <div class="container">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                <div class="md:col-span-2">
+                    <h3 class="text-3xl tracking-[-0.08em] font-sans font-bold text-primary-foreground mb-4">VIZU</h3>
+                    <p class="text-primary-foreground/70 mb-6 leading-relaxed">Studio creativo que transforma marcas a
+                        través de estrategia, contenido y creatividad.</p>
+                    <div class="flex gap-4">
+                        <a href="https://www.instagram.com/vizucreativestudio"
+                            class="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-secondary transition-colors duration-300 group"
+                            aria-label="Instagram" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="lucide lucide-instagram w-5 h-5 text-primary-foreground group-hover:scale-110 transition-transform">
+                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="https://web.facebook.com/vizucreativestudio?_rdc=1&_rdr"
+                            class="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-secondary transition-colors duration-300 group"
+                            aria-label="Facebook" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="lucide lucide-facebook w-5 h-5 text-primary-foreground group-hover:scale-110 transition-transform">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/vizu-creative-studio-00b718366/"
+                            class="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-secondary transition-colors duration-300 group"
+                            aria-label="LinkedIn" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="lucide lucide-linkedin w-5 h-5 text-primary-foreground group-hover:scale-110 transition-transform">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                </path>
+                                <rect width="4" height="12" x="2" y="9"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold text-primary-foreground mb-4">Servicios</h4>
+                    <ul class="space-y-2">
+                        <li><a href="/servicios/redes-sociales"
+                                class="text-primary-foreground/70 hover:text-secondary transition-colors">Redes
+                                Sociales</a></li>
+                        <li><a href="/servicios/meta-google-ads"
+                                class="text-primary-foreground/70 hover:text-secondary transition-colors">Meta & Google
+                                Ads</a></li>
+                        <li><a href="/servicios/produccion-audiovisual"
+                                class="text-primary-foreground/70 hover:text-secondary transition-colors">Producción
+                                Audiovisual</a></li>
+                        <li><a href="/servicios/branding"
+                                class="text-primary-foreground/70 hover:text-secondary transition-colors">Branding</a>
+                        </li>
+                        <li><a href="/servicios/desarrollo-web"
+                                class="text-primary-foreground/70 hover:text-secondary transition-colors">Desarrollo
+                                Web</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold text-primary-foreground mb-4">Contacto</h4>
+                    <ul class="space-y-2 text-primary-foreground/70">
+                        <li>Miami, FL</li>
+                        <li>Medellín, CO</li>
+                        <li class="pt-2"><a href="mailto:vizucreativestudio@gmail.com"
+                                class="hover:text-secondary transition-colors">vizucreativestudio@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                class="border-t border-primary-foreground/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-sm text-primary-foreground/50">© 2026 VIZU Creative Studio. Todos los derechos
+                    reservados.</p>
+                <div class="flex gap-6 text-sm text-primary-foreground/50">
+                    <a href="#" class="hover:text-secondary transition-colors">Política de Privacidad</a>
+                    <a href="#" class="hover:text-secondary transition-colors">Términos y Condiciones</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        // Inicializar Swiper
+        const swiper = new Swiper('.services-swiper', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 3,
+                },
+            },
+        });
+
+        // Formulario de contacto
+        const contactForm = document.getElementById('contactForm');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function (e) {
+                e.preventDefault();
+                alert('¡Gracias por tu mensaje! Te contactaremos en breve.');
+                contactForm.reset();
+            });
+        }
+
+        // Navegación suave
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                if (this.getAttribute('href') !== '#') {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                    }
+                }
+            });
+        });
+
+        // Menú hamburguesa
+        const menuToggle = document.getElementById('menuToggle');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        function closeMenu() {
+            mobileMenu.classList.remove('show');
+            menuIcon.innerHTML = `
+                <line x1="4" x2="20" y1="12" y2="12"></line>
+                <line x1="4" x2="20" y1="6" y2="6"></line>
+                <line x1="4" x2="20" y1="18" y2="18"></line>
+            `;
+        }
+
+        menuToggle.addEventListener('click', function () {
+            mobileMenu.classList.toggle('show');
+            if (mobileMenu.classList.contains('show')) {
+                menuIcon.innerHTML = `
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                `;
+            } else {
+                menuIcon.innerHTML = `
+                    <line x1="4" x2="20" y1="12" y2="12"></line>
+                    <line x1="4" x2="20" y1="6" y2="6"></line>
+                    <line x1="4" x2="20" y1="18" y2="18"></line>
+                `;
+            }
+        });
+
+        document.querySelectorAll('.mobile-menu a').forEach(link => {
+            link.addEventListener('click', closeMenu);
+        });
+
+        document.addEventListener('click', function (event) {
+            if (!menuToggle.contains(event.target) && !mobileMenu.contains(event.target)) {
+                closeMenu();
+            }
+        });
+    </script>
+</body>
+
+</html>

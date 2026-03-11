@@ -1,0 +1,121 @@
+.testimonials-section {
+  background-color: #262626;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+.testimonials-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.testimonials-header {
+  max-width: 48rem;
+  margin: 0 auto 5rem;
+  text-align: center;
+  animation: fade-in 1s ease-out forwards;
+}
+.testimonials-header h2 {
+  font-size: 2.25rem;
+  letter-spacing: -0.08em;
+  font-family: sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+}
+.testimonials-header p {
+  font-size: 1.125rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.testimonial-card {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: #262626;
+  padding: 2rem;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  border-radius: 1rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  color: #ffffff;
+  animation: fade-in-up 0.8s ease-out forwards;
+}
+.testimonial-card:nth-child(2) {
+  animation-delay: 0.15s;
+}
+.testimonial-card:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.testimonial-card:hover {
+  transform: translateY(-0.5rem);
+  border-color: #91836e;
+}
+.testimonial-card svg {
+  width: 2.5rem;
+  height: 2.5rem;
+  color: #91836e;
+  margin-bottom: 1.5rem;
+}
+.testimonial-card p.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.625;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+.testimonial-card .border-t {
+  border-top-width: 1px;
+  border-color: rgba(255, 255, 255, 0.1);
+  padding-top: 1rem;
+}
+.testimonial-card .font-semibold {
+  font-weight: 600;
+  color: #ffffff;
+}
+.testimonial-card .text-sm.text-primary-foreground\/60 {
+  color: #979695;
+}
+
+.testimonials-footer {
+  text-align: center;
+  animation: fade-in 1s ease-out forwards;
+}
+.testimonials-footer p {
+  font-size: 0.875rem;
+  color: #979695;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 2rem;
+}
+
+.trust-brands {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  opacity: 0.6;
+}
+.trust-brands span {
+  color: #979695;
+  font-size: 0.875rem;
+}
+
+@media (min-width: 768px) {
+  .testimonials-header h2 {
+    font-size: 3.75rem;
+  }
+  .testimonials-header p {
+    font-size: 1.25rem;
+  }
+  .testimonials-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}/*# sourceMappingURL=testimonials.css.map */
