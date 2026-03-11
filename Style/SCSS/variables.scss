@@ -23,7 +23,7 @@ $radius: 8px;
 $gradient-warm: linear-gradient(135deg, #fdf5e6, #fae6d1);
 $gradient-dark: linear-gradient(135deg, #1e293b, #0f172a);
 
-// Variables CSS personalizadas (para usar en runtime)
+// Variables CSS personalizadas
 :root {
   --primary: #{$primary};
   --primary-dark: #{$primary-dark};

@@ -5,14 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vizu Creative Studio</title>
-    <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="Style/CSS/main.css">
 </head>
 
 <body>
-    <!-- Navegación -->
     <nav>
         <div class="nav-container">
             <a class="logo-link" href="#hero">
@@ -21,7 +19,6 @@
                 </div>
                 <span class="logo-text">Vizu <span>Creative</span> Studio</span>
             </a>
-            <!-- Navegación desktop -->
             <div class="nav-links">
                 <a class="active" href="#hero">Inicio</a>
                 <div class="relative">
@@ -38,7 +35,6 @@
                     <button class="nav-btn">Contacto</button>
                 </a>
             </div>
-            <!-- Icono de hamburguesa -->
             <button class="menu-icon" id="menuToggle">
                 <svg id="menuIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -48,7 +44,6 @@
                 </svg>
             </button>
         </div>
-        <!-- Menú móvil -->
         <div class="mobile-menu" id="mobileMenu">
             <a href="#hero">Inicio</a>
             <a href="#servicios">Servicios</a>
@@ -57,7 +52,7 @@
         </div>
     </nav>
 
-    <!-- Sección 1: Hero con slider infinito -->
+    <!-- Sección Hero -->
     <section class="hero" id="hero">
         <div class="container">
             <div class="hero-content">
@@ -208,7 +203,7 @@
         </div>
     </section>
 
-    <!-- Sección 2: Servicios Integrales -->
+    <!-- Sección Servicios Integrales -->
     <section class="cards-section" id="servicios">
         <div class="cards-container">
             <div class="cards-header">
@@ -258,7 +253,7 @@
         </div>
     </section>
 
-    <!-- Sección 3: Metodología VIZU 360 -->
+    <!-- Sección Metodología-->
     <section class="methodology-section" id="proceso">
         <div class="container">
             <div class="methodology-grid">
@@ -304,7 +299,7 @@
         </div>
     </section>
 
-    <!-- Sección 4: Innovación Constante -->
+    <!-- Sección Innovación-->
     <section class="innovation-section">
         <div class="container">
             <div class="innovation-badge">
@@ -315,7 +310,7 @@
         </div>
     </section>
 
-    <!-- Sección 5: Nuestros servicios en detalle (Swiper) -->
+    <!-- Sección Nuestros servicios -->
     <section class="services-detalle-section" id="portfolio">
         <div class="container">
             <h3>Nuestros Servicios</h3>
@@ -426,7 +421,7 @@
         </div>
     </section>
 
-    <!-- Sección 6: Pilares Fundamentales (restaurada y corregida) -->
+    <!-- Sección Pilares Fundamentales-->
     <section class="pilares-section">
         <div class="container">
             <h3>Todo se conecta.</h3>
@@ -448,7 +443,7 @@
         </div>
     </section>
 
-    <!-- Sección 7: CTA -->
+    <!-- Sección CTA -->
     <section class="cta-section">
         <div class="container">
             <h3>¿Listo para dar el salto que tu competencia no se atreve?</h3>
@@ -460,7 +455,7 @@
         </div>
     </section>
 
-    <!-- Sección 8: Galería -->
+    <!-- Sección Galería -->
     <section class="gallery-section" id="galeria">
         <div class="container">
             <div class="gallery-header">
@@ -513,7 +508,7 @@
         </div>
     </section>
 
-    <!-- Sección 9: Testimonios (con bordes restaurados) -->
+    <!-- Sección Testimonios -->
     <section class="testimonials-section">
         <div class="container">
             <div class="testimonials-header">
@@ -592,7 +587,7 @@
         </div>
     </section>
 
-    <!-- Sección 10: Estadísticas -->
+    <!-- Sección Estadísticas -->
     <section class="stats-section">
         <div
             class="absolute top-0 left-0 w-96 h-96 bg-primary-foreground/5 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2">
@@ -637,7 +632,7 @@
         </div>
     </section>
 
-    <!-- Sección 11: Contacto -->
+    <!-- Sección Contacto -->
     <section class="contact-section" id="contacto">
         <div class="container">
             <!-- WhatsApp Card -->
@@ -719,7 +714,7 @@
         </div>
     </section>
 
-    <!-- Footer (nuevo) -->
+    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="grid md:grid-cols-4 gap-12 mb-12">
@@ -809,98 +804,7 @@
     </footer>
 
     <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-        // Inicializar Swiper
-        const swiper = new Swiper('.services-swiper', {
-            slidesPerView: 1,
-            spaceBetween: 30,
-            loop: true,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            breakpoints: {
-                640: {
-                    slidesPerView: 2,
-                },
-                1024: {
-                    slidesPerView: 3,
-                },
-            },
-        });
-
-        // Formulario de contacto
-        const contactForm = document.getElementById('contactForm');
-        if (contactForm) {
-            contactForm.addEventListener('submit', function (e) {
-                e.preventDefault();
-                alert('¡Gracias por tu mensaje! Te contactaremos en breve.');
-                contactForm.reset();
-            });
-        }
-
-        // Navegación suave
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                if (this.getAttribute('href') !== '#') {
-                    e.preventDefault();
-                    const targetId = this.getAttribute('href');
-                    const targetElement = document.querySelector(targetId);
-                    if (targetElement) {
-                        window.scrollTo({
-                            top: targetElement.offsetTop - 80,
-                            behavior: 'smooth'
-                        });
-                    }
-                }
-            });
-        });
-
-        // Menú hamburguesa
-        const menuToggle = document.getElementById('menuToggle');
-        const mobileMenu = document.getElementById('mobileMenu');
-        const menuIcon = document.getElementById('menuIcon');
-
-        function closeMenu() {
-            mobileMenu.classList.remove('show');
-            menuIcon.innerHTML = `
-                <line x1="4" x2="20" y1="12" y2="12"></line>
-                <line x1="4" x2="20" y1="6" y2="6"></line>
-                <line x1="4" x2="20" y1="18" y2="18"></line>
-            `;
-        }
-
-        menuToggle.addEventListener('click', function () {
-            mobileMenu.classList.toggle('show');
-            if (mobileMenu.classList.contains('show')) {
-                menuIcon.innerHTML = `
-                    <line x1="18" y1="6" x2="6" y2="18"></line>
-                    <line x1="6" y1="6" x2="18" y2="18"></line>
-                `;
-            } else {
-                menuIcon.innerHTML = `
-                    <line x1="4" x2="20" y1="12" y2="12"></line>
-                    <line x1="4" x2="20" y1="6" y2="6"></line>
-                    <line x1="4" x2="20" y1="18" y2="18"></line>
-                `;
-            }
-        });
-
-        document.querySelectorAll('.mobile-menu a').forEach(link => {
-            link.addEventListener('click', closeMenu);
-        });
-
-        document.addEventListener('click', function (event) {
-            if (!menuToggle.contains(event.target) && !mobileMenu.contains(event.target)) {
-                closeMenu();
-            }
-        });
-    </script>
+    <script src="JavaScript/script.js"></script>
 </body>
 
 </html>
