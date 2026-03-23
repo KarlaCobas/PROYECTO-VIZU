@@ -1,46 +1,71 @@
+// script.js
+
 document.addEventListener('DOMContentLoaded', function() {
+  // ==================== INICIALIZACIÓN SWIPER ====================
   if (typeof Swiper !== 'undefined') {
-    const swiper = new Swiper('.services-swiper', {
+    const servicesSwiper = new Swiper('.services-swiper', {
       slidesPerView: 1,
       spaceBetween: 30,
       loop: true,
-      pagination: { el: '.swiper-pagination', clickable: true },
-      navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+      autoplay: {
+        delay: 3000,           // Cambia cada 3 segundos
+        disableOnInteraction: false, // Sigue autoplay después de que el usuario interactúe
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
       breakpoints: {
-        640: { slidesPerView: 2 },
-        1024: { slidesPerView: 3 },
+        640: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: 3,
+        },
       },
     });
   }
 
+  // ==================== FORMULARIO DE CONTACTO ====================
   const contactForm = document.getElementById('contactForm');
   if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
+    contactForm.addEventListener('submit', function (e) {
       e.preventDefault();
       alert('¡Gracias por tu mensaje! Te contactaremos en breve.');
       contactForm.reset();
     });
   }
 
+  // ==================== NAVEGACIÓN SUAVE ====================
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', (e) => {
-      const href = anchor.getAttribute('href');
+    anchor.addEventListener('click', function (e) {
+      const href = this.getAttribute('href');
       if (href !== '#') {
         e.preventDefault();
-        const target = document.querySelector(href);
-        if (target) {
-          window.scrollTo({ top: target.offsetTop - 80, behavior: 'smooth' });
+        const targetElement = document.querySelector(href);
+        if (targetElement) {
+          window.scrollTo({
+            top: targetElement.offsetTop - 80,
+            behavior: 'smooth'
+          });
+          // Cerrar menú móvil si está abierto
           closeMenu();
         }
       }
     });
   });
 
+  // ==================== MENÚ HAMBURGUESA ====================
   const menuToggle = document.getElementById('menuToggle');
   const mobileMenu = document.getElementById('mobileMenu');
   const menuIcon = document.getElementById('menuIcon');
 
   if (menuToggle && mobileMenu && menuIcon) {
+    // Asegurar estado inicial: cerrado
     mobileMenu.classList.remove('show');
     menuIcon.innerHTML = `
       <line x1="4" x2="20" y1="12" y2="12"></line>
@@ -67,14 +92,20 @@ document.addEventListener('DOMContentLoaded', function() {
       `;
     }
 
-    menuToggle.addEventListener('click', (e) => {
+    menuToggle.addEventListener('click', function (e) {
       e.stopPropagation();
-      if (mobileMenu.classList.contains('show')) closeMenu();
-      else openMenu();
+      if (mobileMenu.classList.contains('show')) {
+        closeMenu();
+      } else {
+        openMenu();
+      }
     });
 
-    document.addEventListener('click', (event) => {
-      if (!menuToggle.contains(event.target) && !mobileMenu.contains(event.target)) closeMenu();
+    // Cerrar menú al hacer clic fuera
+    document.addEventListener('click', function (event) {
+      if (!menuToggle.contains(event.target) && !mobileMenu.contains(event.target)) {
+        closeMenu();
+      }
     });
   }
 });
